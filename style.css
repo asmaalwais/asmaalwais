@@ -548,3 +548,52 @@ a {
         border-bottom: 1px solid rgba(148, 163, 184, 0.4);
     }
 }
+/* ============================= */
+/* RTL ARABIC SUPPORT (index_ar) */
+/* ============================= */
+
+html[lang="ar"] {
+    direction: rtl;
+}
+
+html[lang="ar"] body {
+    font-family: "Inter", sans-serif;
+}
+
+html[lang="ar"] .header-inner {
+    flex-direction: row-reverse;
+}
+
+html[lang="ar"] .nav {
+    flex-direction: row-reverse;
+}
+
+html[lang="ar"] .about-grid,
+html[lang="ar"] .hero-inner,
+html[lang="ar"] .skills-grid,
+html[lang="ar"] .projects-grid,
+html[lang="ar"] .timeline,
+html[lang="ar"] .section-inner {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] .project-card {
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] .timeline-item {
+    padding-right: 16px;
+    padding-left: 0;
+}
+
+html[lang="ar"] .timeline::before {
+    left: auto;
+    right: 10px;
+}
+
+html[lang="ar"] .timeline-dot {
+    margin-left: 0;
+    margin-right: -4px;
+}
