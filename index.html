@@ -1,24 +1,328 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: Arial; padding: 30px; }
-        h1 { font-size: 40px; }
-        .section { margin-top: 30px; }
-    </style>
+    <meta charset="UTF-8">
+    <title>Assma Alwais - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Assma Alwais, Mechatronics Engineer focusing on automation, AI, and robotics.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p>Mechatronics Engineer | AI | Robotics</p>
-
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Smart Factory Project</li>
-            <li>Roboter-Auto</li>
-            <li>PID Control System</li>
-        </ul>
+<header class="site-header">
+    <div class="container header-inner">
+        <div class="logo">
+            <span class="logo-dot"></span>
+            <span class="logo-text">Assma Alwais</span>
+        </div>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow">Mechatronics Engineer</p>
+                <h1>Building intelligent systems that connect hardware and AI.</h1>
+                <p class="hero-subtitle">
+                    I design and implement control systems, robotics, and AI driven applications,
+                    with a focus on automation, system integration, and practical industrial use.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#contact" class="btn secondary">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="hero-tag">Focus Areas</div>
+                <ul class="hero-list">
+                    <li>Automation and Smart Factories</li>
+                    <li>Robotics and Mechatronic Systems</li>
+                    <li>Computer Vision and AI</li>
+                    <li>Control Engineering and PID</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2>About</h2>
+                <p>Short overview</p>
+            </div>
+            <div class="about-grid">
+                <div>
+                    <p>
+                        I am a Mechatronics Engineer with experience across automation, robotics, and AI.
+                        My work ranges from PLC based smart factories to machine learning projects that
+                        analyze sensor data and images.
+                    </p>
+                    <p>
+                        I enjoy designing systems end to end, from hardware and embedded software up
+                        to data analysis and intelligent decision making.
+                    </p>
+                </div>
+                <div class="about-facts">
+                    <div class="fact">
+                        <span class="fact-label">Focus</span>
+                        <span class="fact-value">Automation, AI, Robotics</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Background</span>
+                        <span class="fact-value">Mechatronics Engineering</span>
+                    </div>
+                    <div class="fact">
+                        <span class="fact-label">Strengths</span>
+                        <span class="fact-value">System thinking, prototyping, practical solutions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p>Tools and technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python for AI and data analysis</li>
+                        <li>C and C++ for embedded and microcontrollers</li>
+                        <li>Arduino and microcontroller platforms</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Automation and Control</h3>
+                    <ul>
+                        <li>PLC programming and SCADA concepts</li>
+                        <li>PID control and closed loop systems</li>
+                        <li>Smart factory integration</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Robotics and AI</h3>
+                    <ul>
+                        <li>Robotic arms and mobile robots</li>
+                        <li>Computer vision and image processing</li>
+                        <li>Neural networks and model deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Selected academic and personal work</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Smart Factory -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/smart-factory.jpg" alt="Smart factory setup">
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Factory Automation</h3>
+                        <p class="project-tags">PLC, SCADA, MES, Automation</p>
+                        <p class="project-desc">
+                            Designed and programmed a smart factory line controlled by PLC, monitored
+                            through SCADA, and coordinated via MES. The system manages multiple assembly
+                            stations, synchronizes production steps, and provides real time status feedback.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Roboter Auto -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/robot-car.jpg" alt="Robot car">
+                    </div>
+                    <div class="project-body">
+                        <h3>Roboter Auto</h3>
+                        <p class="project-tags">Embedded, Robotics, Sensors</p>
+                        <p class="project-desc">
+                            Built and programmed an autonomous robot car capable of following paths
+                            and reacting to sensor input. Integrated motor control, sensor fusion,
+                            and basic decision logic on a microcontroller platform.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- PID Control -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/pid-controller.jpg" alt="PID control system">
+                    </div>
+                    <div class="project-body">
+                        <h3>Regelungssystem PID</h3>
+                        <p class="project-tags">Control, PID, System modeling</p>
+                        <p class="project-desc">
+                            Developed and tuned a PID controller to meet specific dynamic requirements.
+                            Modeled the system behavior, implemented the controller, and validated
+                            stability, overshoot, and response time through experiments.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Smart Home -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/smart-home.jpg" alt="Smart home system">
+                    </div>
+                    <div class="project-body">
+                        <h3>Automatisiertes Smart Home</h3>
+                        <p class="project-tags">IoT, Sensors, Automation</p>
+                        <p class="project-desc">
+                            Designed an automated smart home prototype with fire detection, security,
+                            automatic lighting, door pin access, and HVAC control. Combined sensors,
+                            actuators, and control logic into one integrated system.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Agricultural Robot -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/agri-robot.jpg" alt="Agricultural robot">
+                    </div>
+                    <div class="project-body">
+                        <h3>Landwirtschaftlicher Roboter</h3>
+                        <p class="project-tags">Robotics, Computer Vision, Inverse kinematics</p>
+                        <p class="project-desc">
+                            Developed an agricultural robot with a six axis robotic arm to remove dead
+                            leaves from strawberry plants. Used image processing to detect target leaves
+                            and inverse kinematics to plan arm motions.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Vibration Sensor Analysis -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/vibration-analysis.jpg" alt="Vibration sensor data">
+                    </div>
+                    <div class="project-body">
+                        <h3>Datenanalyse eines Schwingungssensors</h3>
+                        <p class="project-tags">Data analysis, Sensors, Python</p>
+                        <p class="project-desc">
+                            Collected and analyzed vibration sensor data to study system behavior under
+                            different conditions. Applied signal processing and data visualization to
+                            identify patterns and anomalies.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- AI Image Captioning -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/ai-caption.jpg" alt="AI image captioning">
+                    </div>
+                    <div class="project-body">
+                        <h3>AI Image Caption Generator</h3>
+                        <p class="project-tags">CNN, RNN, Deep learning</p>
+                        <p class="project-desc">
+                            Implemented a neural network that generates text descriptions for images.
+                            Used a convolutional network for visual feature extraction and a recurrent
+                            network to produce natural language captions based on the image content.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section id="experience" class="section section-alt">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2>Experience and Education</h2>
+                <p>Short overview of my background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Mechatronics Engineering</h3>
+                        <p class="timeline-meta">Bachelor studies</p>
+                        <p>
+                            Completed projects in robotics, automation, power electronics,
+                            control systems, and AI applications. Consistently involved in
+                            practical lab work and interdisciplinary projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Practical and Project Work</h3>
+                        <p class="timeline-meta">Automation, robotics, AI</p>
+                        <p>
+                            Worked on smart factory programming, robot car development,
+                            agricultural robotics, sensor data analysis, and deep learning
+                            based image captioning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container section-inner">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <p>Interested in collaboration or projects</p>
+            </div>
+            <div class="contact-box">
+                <p>
+                    If you would like to talk about projects, collaboration, or opportunities,
+                    you can reach me via email.
+                </p>
+                <p class="contact-email">
+                    <span>Email:</span> <a href="mailto:example@example.com">example@example.com</a>
+                </p>
+                <p class="contact-note">
+                    Replace the email address with the one you are comfortable sharing.
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Assma Alwais. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    // set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
